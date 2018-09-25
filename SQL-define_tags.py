@@ -33,9 +33,9 @@ def process_map(filename):
 
 def test():
 
-    keys = process_map('/Users/carinashen/Downloads/hawaii-latest.osm')
+    keys = process_map('/Users/carinashen/Documents/Projects/data-wrangling-project/east-hawaii-map.osm')
     pprint.pprint(keys)
-    assert keys == {'lower': 243747, 'lower_colon': 100136, 'other': 6230, 'problemchars': 0}
+    assert keys == {'lower': 11126, 'lower_colon': 4583, 'other': 408, 'problemchars': 0}
 
 
 if __name__ == "__main__":

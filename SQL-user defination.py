@@ -20,9 +20,9 @@ def process_map(filename):
 
 def test():
 
-    users = process_map('/Users/carinashen/Downloads/hawaii-latest.osm')
+    users = process_map('/Users/carinashen/Documents/Projects/data-wrangling-project/east-hawaii-map.osm')
     pprint.pprint(users)
-    assert len(users) == 6
+    assert len(users) == 1214881
 
 
 
