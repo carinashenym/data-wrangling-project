@@ -26,3 +26,36 @@ output
 1;"bank"
 1;"police"
 ```
+### how many schools here in east hawaii
+```
+Select count(*)
+from planet_osm_polygon
+Where amenity = 'school'
+```
+output
+```
+4
+```
+### number of ways
+```
+Select count(*)
+from planet_osm_ways
+```
+output
+```
+4906
+```
+
+### who is the contributer of the map
+```
+SELECT count(*) as editer, auth_name
+FROM spatial_ref_sys
+group by auth_name
+ORDER BY editer DESC
+LIMIT 10
+```
+output
+```
+5756;"EPSG"
+1;"spatialreferencing.org"
+```
